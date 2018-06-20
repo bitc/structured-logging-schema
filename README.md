@@ -44,6 +44,7 @@ While other libraries nest the payload object beneath some key, with a result li
 
 | Library | Message JSON Key | Payload Object JSON Key |
 |---------|--------------------|------------------|
+| [bunyan](https://github.com/trentm/node-bunyan) (JavaScript) |  `msg` | *Merged with root* |
 | [katip](https://github.com/Soostone/katip) (Haskell) | `msg` | `data` |
 | [logrus](https://github.com/sirupsen/logrus) (Go) | `msg` | *Merged with root* |
 | [logstash](https://github.com/elastic/logstash) | `message` | *Merged with root* |
@@ -62,6 +63,7 @@ All libraries automatically add a timestamp to all events.
 
 | Library | Timestamp JSON Key | Timestamp format |
 |---------|--------------------|------------------|
+| [bunyan](https://github.com/trentm/node-bunyan) (JavaScript) | `time` | ISO 8601 |
 | [katip](https://github.com/Soostone/katip) (Haskell) | `at` | ISO 8601 |
 | [logrus](https://github.com/sirupsen/logrus) (Go) | `time` | ISO 8601 |
 | [logstash](https://github.com/elastic/logstash) | `timestamp` / `@timestamp` | ISO 8601 / varies |
@@ -83,6 +85,7 @@ from a pre-defined list of available levels.
 
 | Library | Log Level JSON Key |
 |---------|--------------------|
+| [bunyan](https://github.com/trentm/node-bunyan) (JavaScript) | `level` |
 | [katip](https://github.com/Soostone/katip) (Haskell) | `sev` |
 | [logrus](https://github.com/sirupsen/logrus) (Go) | `level` |
 | [logstash](https://github.com/elastic/logstash) | **HELP NEEDED** |
@@ -98,6 +101,7 @@ from a pre-defined list of available levels.
 
 | Library | VERBOSE | TRACE | DEBUG | INFO | NOTICE | WARNING | ERROR | CRITICAL | ALERT | FATAL | PANIC | EMERGENCY |
 |---------|-----------|---------|----|----|----|----|----|----|----|----|----|----|
+| [bunyan](https://github.com/trentm/node-bunyan) (JavaScript) | *N/A* | `10` | `20` | `30` | *N/A* | `40` | `50` | *N/A* | *N/A* | `60` | *N/A* | *N/A* |
 | [katip](https://github.com/Soostone/katip) (Haskell) | *N/A* | *N/A* | `Debug` | `Info` | `Notice` | `Warning` | `Error` | `Critical` | `Alert` | *N/A* | *N/A* | `Emergency` |
 | [logrus](https://github.com/sirupsen/logrus) (Go) | *N/A* | *N/A* | `debug` | `info` | *N/A* | `warning` | `error` | *N/A* | *N/A* | `fatal` | `panic` | *N/A* |
 | [logstash](https://github.com/elastic/logstash) | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** |
@@ -118,6 +122,7 @@ global fields suchs the current environment and application.
 
 | Library | Environment | Application | Namespace | Package | Machine Hostname | Process ID | Thread ID |
 |---------|-----------------|----|----|----|----|----|----|
+| [bunyan](https://github.com/trentm/node-bunyan) (JavaScript) | *N/A* | *N/A* | *N/A* | *N/A* | `hostname` | `pid` | *N/A* |
 | [katip](https://github.com/Soostone/katip) (Haskell) | `env` | `app` (Array of strings) | `ns` (Array of strings) | *N/A* | `host` | `pid` |`thread` |
 | [logrus](https://github.com/sirupsen/logrus) (Go) | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* |
 | [logstash](https://github.com/elastic/logstash) | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** |
