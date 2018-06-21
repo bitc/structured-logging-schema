@@ -52,7 +52,7 @@ While other libraries nest the payload object beneath some key, with a result li
 | [pygogo](https://github.com/reubano/pygogo) (Python) | `message` | *Merged with root* |
 | [roarr](https://github.com/gajus/roarr) (JavaScript) | `message` | `context` |
 | [semantic logger](https://github.com/rocketjob/semantic_logger) (Ruby) | `message` | **HELP NEEDED** |
-| [serilog](https://github.com/serilog/serilog) (C#) | **HELP NEEDED** | *Merged with root* |
+| [serilog](https://github.com/serilog/serilog) (C#) | `@m` / `@mt` | *Merged with root* |
 | [slog](https://github.com/slog-rs/slog) (Rust) | `msg` | *Merged with root* |
 | [structlog](https://github.com/hynek/structlog) (Python) | `msg` | **HELP NEEDED** |
 
@@ -71,7 +71,7 @@ All libraries automatically add a timestamp to all events.
 | [pygogo](https://github.com/reubano/pygogo) (Python) | `time` | ISO 8601 |
 | [roarr](https://github.com/gajus/roarr) (JavaScript) | `time` | Epoch milliseconds |
 | [semantic logger](https://github.com/rocketjob/semantic_logger) (Ruby) | `time` | ISO 8601 |
-| [serilog](https://github.com/serilog/serilog) (C#) | **HELP NEEDED** | **HELP NEEDED** |
+| [serilog](https://github.com/serilog/serilog) (C#) | `Timestamp` / `@t` | ISO 8601 |
 | [slog](https://github.com/slog-rs/slog) (Rust) | `ts` | ISO 8601 |
 | [structlog](https://github.com/hynek/structlog) (Python) | `timestamp` | ISO 8601 |
 
@@ -93,7 +93,7 @@ from a pre-defined list of available levels.
 | [pygogo](https://github.com/reubano/pygogo) (Python) | `level` |
 | [roarr](https://github.com/gajus/roarr) (JavaScript) | `context.logLevel` |
 | [semantic logger](https://github.com/rocketjob/semantic_logger) (Ruby) | `level` |
-| [serilog](https://github.com/serilog/serilog) (C#) | **HELP NEEDED** |
+| [serilog](https://github.com/serilog/serilog) (C#) | `Level` / `@l` |
 | [slog](https://github.com/slog-rs/slog) (Rust) | `level` |
 | [structlog](https://github.com/hynek/structlog) (Python) | `level` |
 
@@ -130,7 +130,7 @@ global fields suchs the current environment and application.
 | [pygogo](https://github.com/reubano/pygogo) (Python) | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* |
 | [roarr](https://github.com/gajus/roarr) (JavaScript) | *N/A* | `context.application` | `context.namespace` | `context.package` | `context.hostname` | *N/A* | *N/A* |
 | [semantic logger](https://github.com/rocketjob/semantic_logger) (Ruby) | *N/A* | `application` | *N/A* | *N/A* | `host_name` | `pid` | `thread_name` |
-| [serilog](https://github.com/serilog/serilog) (C#) | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** | **HELP NEEDED** |
+| [serilog](https://github.com/serilog/serilog) (C#) | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* |
 | [slog](https://github.com/slog-rs/slog) (Rust) | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* |
 | [structlog](https://github.com/hynek/structlog) (Python) | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* | *N/A* |
 
